@@ -1,0 +1,936 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212200a4b8a31ab5bdfaab720abb23f8cec2917649fe2f89c45855e4beb3d72a3244764736f6c634300080e0033",
+    "sourceMap": "158:696:29:-:0;;;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x600080fdfea26469706673582212200a4b8a31ab5bdfaab720abb23f8cec2917649fe2f89c45855e4beb3d72a3244764736f6c634300080e0033",
+    "sourceMap": "158:696:29:-:0;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "ast": {
+    "absolutePath": "src/libraries/RebaseLibrary.sol",
+    "id": 6650,
+    "exportedSymbols": {
+      "Rebase": [
+        6579
+      ],
+      "RebaseLibrary": [
+        6649
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:809:29",
+    "nodes": [
+      {
+        "id": 6574,
+        "nodeType": "PragmaDirective",
+        "src": "46:21:29",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8"
+        ]
+      },
+      {
+        "id": 6579,
+        "nodeType": "StructDefinition",
+        "src": "69:56:29",
+        "canonicalName": "Rebase",
+        "members": [
+          {
+            "constant": false,
+            "id": 6576,
+            "mutability": "mutable",
+            "name": "elastic",
+            "nameLocation": "97:7:29",
+            "nodeType": "VariableDeclaration",
+            "scope": 6579,
+            "src": "89:15:29",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint128",
+              "typeString": "uint128"
+            },
+            "typeName": {
+              "id": 6575,
+              "name": "uint128",
+              "nodeType": "ElementaryTypeName",
+              "src": "89:7:29",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint128",
+                "typeString": "uint128"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 6578,
+            "mutability": "mutable",
+            "name": "base",
+            "nameLocation": "118:4:29",
+            "nodeType": "VariableDeclaration",
+            "scope": 6579,
+            "src": "110:12:29",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint128",
+              "typeString": "uint128"
+            },
+            "typeName": {
+              "id": 6577,
+              "name": "uint128",
+              "nodeType": "ElementaryTypeName",
+              "src": "110:7:29",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint128",
+                "typeString": "uint128"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "Rebase",
+        "nameLocation": "76:6:29",
+        "scope": 6650,
+        "visibility": "public"
+      },
+      {
+        "id": 6649,
+        "nodeType": "ContractDefinition",
+        "src": "158:696:29",
+        "nodes": [
+          {
+            "id": 6614,
+            "nodeType": "FunctionDefinition",
+            "src": "270:246:29",
+            "body": {
+              "id": 6613,
+              "nodeType": "Block",
+              "src": "361:155:29",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    },
+                    "id": 6594,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 6591,
+                        "name": "total",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6584,
+                        "src": "375:5:29",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                          "typeString": "struct Rebase memory"
+                        }
+                      },
+                      "id": 6592,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "elastic",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6576,
+                      "src": "375:13:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 6593,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "392:1:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "375:18:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 6611,
+                    "nodeType": "Block",
+                    "src": "440:70:29",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 6609,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 6600,
+                            "name": "base",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 6589,
+                            "src": "454:4:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 6608,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "components": [
+                                {
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "id": 6604,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "leftExpression": {
+                                    "id": 6601,
+                                    "name": "elastic",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 6586,
+                                    "src": "462:7:29",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "nodeType": "BinaryOperation",
+                                  "operator": "*",
+                                  "rightExpression": {
+                                    "expression": {
+                                      "id": 6602,
+                                      "name": "total",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 6584,
+                                      "src": "472:5:29",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                                        "typeString": "struct Rebase memory"
+                                      }
+                                    },
+                                    "id": 6603,
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "base",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 6578,
+                                    "src": "472:10:29",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint128",
+                                      "typeString": "uint128"
+                                    }
+                                  },
+                                  "src": "462:20:29",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                }
+                              ],
+                              "id": 6605,
+                              "isConstant": false,
+                              "isInlineArray": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "TupleExpression",
+                              "src": "461:22:29",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "/",
+                            "rightExpression": {
+                              "expression": {
+                                "id": 6606,
+                                "name": "total",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 6584,
+                                "src": "486:5:29",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                                  "typeString": "struct Rebase memory"
+                                }
+                              },
+                              "id": 6607,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "elastic",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 6576,
+                              "src": "486:13:29",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint128",
+                                "typeString": "uint128"
+                              }
+                            },
+                            "src": "461:38:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "454:45:29",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 6610,
+                        "nodeType": "ExpressionStatement",
+                        "src": "454:45:29"
+                      }
+                    ]
+                  },
+                  "id": 6612,
+                  "nodeType": "IfStatement",
+                  "src": "371:139:29",
+                  "trueBody": {
+                    "id": 6599,
+                    "nodeType": "Block",
+                    "src": "395:39:29",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 6597,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 6595,
+                            "name": "base",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 6589,
+                            "src": "409:4:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 6596,
+                            "name": "elastic",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 6586,
+                            "src": "416:7:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "409:14:29",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 6598,
+                        "nodeType": "ExpressionStatement",
+                        "src": "409:14:29"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 6581,
+              "nodeType": "StructuredDocumentation",
+              "src": "186:79:29",
+              "text": "@notice Calculates the base value in relationship to `elastic` and `total`."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "toBase",
+            "nameLocation": "279:6:29",
+            "parameters": {
+              "id": 6587,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6584,
+                  "mutability": "mutable",
+                  "name": "total",
+                  "nameLocation": "300:5:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6614,
+                  "src": "286:19:29",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                    "typeString": "struct Rebase"
+                  },
+                  "typeName": {
+                    "id": 6583,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 6582,
+                      "name": "Rebase",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 6579,
+                      "src": "286:6:29"
+                    },
+                    "referencedDeclaration": 6579,
+                    "src": "286:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Rebase_$6579_storage_ptr",
+                      "typeString": "struct Rebase"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6586,
+                  "mutability": "mutable",
+                  "name": "elastic",
+                  "nameLocation": "315:7:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6614,
+                  "src": "307:15:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6585,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "307:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "285:38:29"
+            },
+            "returnParameters": {
+              "id": 6590,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6589,
+                  "mutability": "mutable",
+                  "name": "base",
+                  "nameLocation": "355:4:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6614,
+                  "src": "347:12:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6588,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "347:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "346:14:29"
+            },
+            "scope": 6649,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 6648,
+            "nodeType": "FunctionDefinition",
+            "src": "606:246:29",
+            "body": {
+              "id": 6647,
+              "nodeType": "Block",
+              "src": "700:152:29",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    },
+                    "id": 6628,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 6625,
+                        "name": "total",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6618,
+                        "src": "714:5:29",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                          "typeString": "struct Rebase memory"
+                        }
+                      },
+                      "id": 6626,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "base",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6578,
+                      "src": "714:10:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 6627,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "728:1:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "714:15:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 6645,
+                    "nodeType": "Block",
+                    "src": "776:70:29",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 6643,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 6634,
+                            "name": "elastic",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 6623,
+                            "src": "790:7:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 6642,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "components": [
+                                {
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "id": 6638,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "leftExpression": {
+                                    "id": 6635,
+                                    "name": "base",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 6620,
+                                    "src": "801:4:29",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "nodeType": "BinaryOperation",
+                                  "operator": "*",
+                                  "rightExpression": {
+                                    "expression": {
+                                      "id": 6636,
+                                      "name": "total",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 6618,
+                                      "src": "808:5:29",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                                        "typeString": "struct Rebase memory"
+                                      }
+                                    },
+                                    "id": 6637,
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "elastic",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 6576,
+                                    "src": "808:13:29",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint128",
+                                      "typeString": "uint128"
+                                    }
+                                  },
+                                  "src": "801:20:29",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                }
+                              ],
+                              "id": 6639,
+                              "isConstant": false,
+                              "isInlineArray": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "TupleExpression",
+                              "src": "800:22:29",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "/",
+                            "rightExpression": {
+                              "expression": {
+                                "id": 6640,
+                                "name": "total",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 6618,
+                                "src": "825:5:29",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                                  "typeString": "struct Rebase memory"
+                                }
+                              },
+                              "id": 6641,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "base",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 6578,
+                              "src": "825:10:29",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint128",
+                                "typeString": "uint128"
+                              }
+                            },
+                            "src": "800:35:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "790:45:29",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 6644,
+                        "nodeType": "ExpressionStatement",
+                        "src": "790:45:29"
+                      }
+                    ]
+                  },
+                  "id": 6646,
+                  "nodeType": "IfStatement",
+                  "src": "710:136:29",
+                  "trueBody": {
+                    "id": 6633,
+                    "nodeType": "Block",
+                    "src": "731:39:29",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 6631,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 6629,
+                            "name": "elastic",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 6623,
+                            "src": "745:7:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 6630,
+                            "name": "base",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 6620,
+                            "src": "755:4:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "745:14:29",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 6632,
+                        "nodeType": "ExpressionStatement",
+                        "src": "745:14:29"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 6615,
+              "nodeType": "StructuredDocumentation",
+              "src": "522:79:29",
+              "text": "@notice Calculates the elastic value in relationship to `base` and `total`."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "toElastic",
+            "nameLocation": "615:9:29",
+            "parameters": {
+              "id": 6621,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6618,
+                  "mutability": "mutable",
+                  "name": "total",
+                  "nameLocation": "639:5:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6648,
+                  "src": "625:19:29",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Rebase_$6579_memory_ptr",
+                    "typeString": "struct Rebase"
+                  },
+                  "typeName": {
+                    "id": 6617,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 6616,
+                      "name": "Rebase",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 6579,
+                      "src": "625:6:29"
+                    },
+                    "referencedDeclaration": 6579,
+                    "src": "625:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Rebase_$6579_storage_ptr",
+                      "typeString": "struct Rebase"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6620,
+                  "mutability": "mutable",
+                  "name": "base",
+                  "nameLocation": "654:4:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6648,
+                  "src": "646:12:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6619,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "646:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "624:35:29"
+            },
+            "returnParameters": {
+              "id": 6624,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6623,
+                  "mutability": "mutable",
+                  "name": "elastic",
+                  "nameLocation": "691:7:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6648,
+                  "src": "683:15:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6622,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "683:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "682:17:29"
+            },
+            "scope": 6649,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "RebaseLibrary",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 6580,
+          "nodeType": "StructuredDocumentation",
+          "src": "127:31:29",
+          "text": "@notice A rebasing library"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          6649
+        ],
+        "name": "RebaseLibrary",
+        "nameLocation": "166:13:29",
+        "scope": 6650,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 29
+}

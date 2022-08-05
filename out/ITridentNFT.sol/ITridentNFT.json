@@ -1,0 +1,172 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "ownerOf(uint256)": "6352211e"
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/ITridentNFT.sol",
+    "id": 5955,
+    "exportedSymbols": {
+      "ITridentNFT": [
+        5954
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:150:21",
+    "nodes": [
+      {
+        "id": 5945,
+        "nodeType": "PragmaDirective",
+        "src": "46:24:21",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 5954,
+        "nodeType": "ContractDefinition",
+        "src": "107:88:21",
+        "nodes": [
+          {
+            "id": 5953,
+            "nodeType": "FunctionDefinition",
+            "src": "135:58:21",
+            "functionSelector": "6352211e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "ownerOf",
+            "nameLocation": "144:7:21",
+            "parameters": {
+              "id": 5949,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5948,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5953,
+                  "src": "152:7:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5947,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "151:9:21"
+            },
+            "returnParameters": {
+              "id": 5952,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5951,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5953,
+                  "src": "184:7:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5950,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:9:21"
+            },
+            "scope": 5954,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITridentNFT",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5946,
+          "nodeType": "StructuredDocumentation",
+          "src": "72:35:21",
+          "text": "@notice Trident NFT interface."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5954
+        ],
+        "name": "ITridentNFT",
+        "nameLocation": "117:11:21",
+        "scope": 5955,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 21
+}

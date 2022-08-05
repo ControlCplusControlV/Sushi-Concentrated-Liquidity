@@ -1,0 +1,267 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "native",
+          "type": "bool"
+        }
+      ],
+      "name": "mintCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "mintCallback(address,address,uint256,uint256,bool)": "a7c1d448"
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IPositionManager.sol",
+    "id": 5930,
+    "exportedSymbols": {
+      "IPositionManager": [
+        5929
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:290:19",
+    "nodes": [
+      {
+        "id": 5914,
+        "nodeType": "PragmaDirective",
+        "src": "46:24:19",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 5929,
+        "nodeType": "ContractDefinition",
+        "src": "144:191:19",
+        "nodes": [
+          {
+            "id": 5928,
+            "nodeType": "FunctionDefinition",
+            "src": "177:156:19",
+            "functionSelector": "a7c1d448",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintCallback",
+            "nameLocation": "186:12:19",
+            "parameters": {
+              "id": 5926,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5917,
+                  "mutability": "mutable",
+                  "name": "token0",
+                  "nameLocation": "216:6:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5928,
+                  "src": "208:14:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5916,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "208:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5919,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nameLocation": "240:6:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5928,
+                  "src": "232:14:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5918,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "232:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5921,
+                  "mutability": "mutable",
+                  "name": "amount0",
+                  "nameLocation": "264:7:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5928,
+                  "src": "256:15:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5920,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "256:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5923,
+                  "mutability": "mutable",
+                  "name": "amount1",
+                  "nameLocation": "289:7:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5928,
+                  "src": "281:15:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5922,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "281:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5925,
+                  "mutability": "mutable",
+                  "name": "native",
+                  "nameLocation": "311:6:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5928,
+                  "src": "306:11:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5924,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "306:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "198:125:19"
+            },
+            "returnParameters": {
+              "id": 5927,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "332:0:19"
+            },
+            "scope": 5929,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPositionManager",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5915,
+          "nodeType": "StructuredDocumentation",
+          "src": "72:72:19",
+          "text": "@notice Trident concentrated Liquidity pool mint callback receiver."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5929
+        ],
+        "name": "IPositionManager",
+        "nameLocation": "154:16:19",
+        "scope": 5930,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 19
+}

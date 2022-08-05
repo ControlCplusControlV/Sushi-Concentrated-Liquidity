@@ -1,0 +1,533 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "ast": {
+    "absolutePath": "src/interfaces/IConcentratedLiquidityPoolManager.sol",
+    "id": 5631,
+    "exportedSymbols": {
+      "IBentoBoxMinimal": [
+        5385
+      ],
+      "IConcentratedLiquidityPool": [
+        5587
+      ],
+      "IConcentratedLiquidityPoolManager": [
+        5630
+      ],
+      "IConcentratedLiquidityPoolManagerStruct": [
+        5610
+      ],
+      "IConcentratedLiquidityPoolStruct": [
+        5446
+      ],
+      "IMasterDeployer": [
+        5800
+      ],
+      "ITridentNFT": [
+        5954
+      ],
+      "Rebase": [
+        6579
+      ],
+      "RebaseLibrary": [
+        6649
+      ],
+      "TickMath": [
+        7336
+      ],
+      "Ticks": [
+        8014
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:808:11",
+    "nodes": [
+      {
+        "id": 5589,
+        "nodeType": "PragmaDirective",
+        "src": "46:24:11",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 5590,
+        "nodeType": "ImportDirective",
+        "src": "72:42:11",
+        "absolutePath": "src/interfaces/IConcentratedLiquidityPool.sol",
+        "file": "./IConcentratedLiquidityPool.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 5631,
+        "sourceUnit": 5588,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 5591,
+        "nodeType": "ImportDirective",
+        "src": "115:27:11",
+        "absolutePath": "src/interfaces/ITridentNFT.sol",
+        "file": "./ITridentNFT.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 5631,
+        "sourceUnit": 5955,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 5610,
+        "nodeType": "ContractDefinition",
+        "src": "218:322:11",
+        "nodes": [
+          {
+            "id": 5609,
+            "nodeType": "StructDefinition",
+            "src": "274:264:11",
+            "canonicalName": "IConcentratedLiquidityPoolManagerStruct.Position",
+            "members": [
+              {
+                "constant": false,
+                "id": 5595,
+                "mutability": "mutable",
+                "name": "pool",
+                "nameLocation": "327:4:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 5609,
+                "src": "300:31:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IConcentratedLiquidityPool_$5587",
+                  "typeString": "contract IConcentratedLiquidityPool"
+                },
+                "typeName": {
+                  "id": 5594,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 5593,
+                    "name": "IConcentratedLiquidityPool",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 5587,
+                    "src": "300:26:11"
+                  },
+                  "referencedDeclaration": 5587,
+                  "src": "300:26:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConcentratedLiquidityPool_$5587",
+                    "typeString": "contract IConcentratedLiquidityPool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5597,
+                "mutability": "mutable",
+                "name": "liquidity",
+                "nameLocation": "349:9:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 5609,
+                "src": "341:17:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 5596,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "341:7:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5599,
+                "mutability": "mutable",
+                "name": "lower",
+                "nameLocation": "374:5:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 5609,
+                "src": "368:11:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int24",
+                  "typeString": "int24"
+                },
+                "typeName": {
+                  "id": 5598,
+                  "name": "int24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "368:5:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5601,
+                "mutability": "mutable",
+                "name": "upper",
+                "nameLocation": "395:5:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 5609,
+                "src": "389:11:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int24",
+                  "typeString": "int24"
+                },
+                "typeName": {
+                  "id": 5600,
+                  "name": "int24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "389:5:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5603,
+                "mutability": "mutable",
+                "name": "latestAddition",
+                "nameLocation": "417:14:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 5609,
+                "src": "410:21:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 5602,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "410:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5605,
+                "mutability": "mutable",
+                "name": "feeGrowthInside0",
+                "nameLocation": "449:16:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 5609,
+                "src": "441:24:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5604,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "441:7:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5608,
+                "mutability": "mutable",
+                "name": "feeGrowthInside1",
+                "nameLocation": "515:16:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 5609,
+                "src": "507:24:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5607,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "507:7:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Position",
+            "nameLocation": "281:8:11",
+            "scope": 5610,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IConcentratedLiquidityPoolManagerStruct",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5592,
+          "nodeType": "StructuredDocumentation",
+          "src": "144:74:11",
+          "text": "@notice Trident concentrated liquidity pool manager contract Structs."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          5610
+        ],
+        "name": "IConcentratedLiquidityPoolManagerStruct",
+        "nameLocation": "228:39:11",
+        "scope": 5631,
+        "usedErrors": []
+      },
+      {
+        "id": 5630,
+        "nodeType": "ContractDefinition",
+        "src": "613:240:11",
+        "nodes": [
+          {
+            "id": 5623,
+            "nodeType": "FunctionDefinition",
+            "src": "719:68:11",
+            "functionSelector": "99fbab88",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "positions",
+            "nameLocation": "728:9:11",
+            "parameters": {
+              "id": 5618,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5617,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5623,
+                  "src": "738:7:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5616,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "738:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "737:9:11"
+            },
+            "returnParameters": {
+              "id": 5622,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5621,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5623,
+                  "src": "770:15:11",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Position_$5609_memory_ptr",
+                    "typeString": "struct IConcentratedLiquidityPoolManagerStruct.Position"
+                  },
+                  "typeName": {
+                    "id": 5620,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5619,
+                      "name": "Position",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5609,
+                      "src": "770:8:11"
+                    },
+                    "referencedDeclaration": 5609,
+                    "src": "770:8:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Position_$5609_storage_ptr",
+                      "typeString": "struct IConcentratedLiquidityPoolManagerStruct.Position"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "769:17:11"
+            },
+            "scope": 5630,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 5629,
+            "nodeType": "FunctionDefinition",
+            "src": "793:58:11",
+            "functionSelector": "4da31827",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bento",
+            "nameLocation": "802:5:11",
+            "parameters": {
+              "id": 5624,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "807:2:11"
+            },
+            "returnParameters": {
+              "id": 5628,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5627,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5629,
+                  "src": "833:16:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBentoBoxMinimal_$5385",
+                    "typeString": "contract IBentoBoxMinimal"
+                  },
+                  "typeName": {
+                    "id": 5626,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5625,
+                      "name": "IBentoBoxMinimal",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5385,
+                      "src": "833:16:11"
+                    },
+                    "referencedDeclaration": 5385,
+                    "src": "833:16:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBentoBoxMinimal_$5385",
+                      "typeString": "contract IBentoBoxMinimal"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "832:18:11"
+            },
+            "scope": 5630,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5612,
+              "name": "IConcentratedLiquidityPoolManagerStruct",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5610,
+              "src": "660:39:11"
+            },
+            "id": 5613,
+            "nodeType": "InheritanceSpecifier",
+            "src": "660:39:11"
+          },
+          {
+            "baseName": {
+              "id": 5614,
+              "name": "ITridentNFT",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5954,
+              "src": "701:11:11"
+            },
+            "id": 5615,
+            "nodeType": "InheritanceSpecifier",
+            "src": "701:11:11"
+          }
+        ],
+        "canonicalName": "IConcentratedLiquidityPoolManager",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5611,
+          "nodeType": "StructuredDocumentation",
+          "src": "542:71:11",
+          "text": "@notice Trident concentrated liquidity manager contract interface."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5630,
+          5954,
+          5610
+        ],
+        "name": "IConcentratedLiquidityPoolManager",
+        "nameLocation": "623:33:11",
+        "scope": 5631,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 11
+}

@@ -1,0 +1,1047 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "ast": {
+    "absolutePath": "src/interfaces/ITridentRouter.sol",
+    "id": 6035,
+    "exportedSymbols": {
+      "ITridentRouter": [
+        6034
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:1160:22",
+    "nodes": [
+      {
+        "id": 5956,
+        "nodeType": "PragmaDirective",
+        "src": "46:24:22",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 6034,
+        "nodeType": "ContractDefinition",
+        "src": "115:1090:22",
+        "nodes": [
+          {
+            "id": 5962,
+            "nodeType": "StructDefinition",
+            "src": "146:61:22",
+            "canonicalName": "ITridentRouter.Path",
+            "members": [
+              {
+                "constant": false,
+                "id": 5959,
+                "mutability": "mutable",
+                "name": "pool",
+                "nameLocation": "176:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5962,
+                "src": "168:12:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 5958,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "168:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5961,
+                "mutability": "mutable",
+                "name": "data",
+                "nameLocation": "196:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5962,
+                "src": "190:10:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 5960,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "190:5:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Path",
+            "nameLocation": "153:4:22",
+            "scope": 6034,
+            "visibility": "public"
+          },
+          {
+            "id": 5973,
+            "nodeType": "StructDefinition",
+            "src": "213:164:22",
+            "canonicalName": "ITridentRouter.ExactInputSingleParams",
+            "members": [
+              {
+                "constant": false,
+                "id": 5964,
+                "mutability": "mutable",
+                "name": "amountIn",
+                "nameLocation": "261:8:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5973,
+                "src": "253:16:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5963,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "253:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5966,
+                "mutability": "mutable",
+                "name": "amountOutMinimum",
+                "nameLocation": "287:16:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5973,
+                "src": "279:24:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5965,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "279:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5968,
+                "mutability": "mutable",
+                "name": "pool",
+                "nameLocation": "321:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5973,
+                "src": "313:12:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 5967,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "313:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5970,
+                "mutability": "mutable",
+                "name": "tokenIn",
+                "nameLocation": "343:7:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5973,
+                "src": "335:15:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 5969,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "335:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5972,
+                "mutability": "mutable",
+                "name": "data",
+                "nameLocation": "366:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5973,
+                "src": "360:10:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 5971,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "360:5:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ExactInputSingleParams",
+            "nameLocation": "220:22:22",
+            "scope": 6034,
+            "visibility": "public"
+          },
+          {
+            "id": 5984,
+            "nodeType": "StructDefinition",
+            "src": "383:137:22",
+            "canonicalName": "ITridentRouter.ExactInputParams",
+            "members": [
+              {
+                "constant": false,
+                "id": 5975,
+                "mutability": "mutable",
+                "name": "tokenIn",
+                "nameLocation": "425:7:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5984,
+                "src": "417:15:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 5974,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "417:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5977,
+                "mutability": "mutable",
+                "name": "amountIn",
+                "nameLocation": "450:8:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5984,
+                "src": "442:16:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5976,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "442:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5979,
+                "mutability": "mutable",
+                "name": "amountOutMinimum",
+                "nameLocation": "476:16:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5984,
+                "src": "468:24:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5978,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "468:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5983,
+                "mutability": "mutable",
+                "name": "path",
+                "nameLocation": "509:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5984,
+                "src": "502:11:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Path_$5962_storage_$dyn_storage_ptr",
+                  "typeString": "struct ITridentRouter.Path[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 5981,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5980,
+                      "name": "Path",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5962,
+                      "src": "502:4:22"
+                    },
+                    "referencedDeclaration": 5962,
+                    "src": "502:4:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Path_$5962_storage_ptr",
+                      "typeString": "struct ITridentRouter.Path"
+                    }
+                  },
+                  "id": 5982,
+                  "nodeType": "ArrayTypeName",
+                  "src": "502:6:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Path_$5962_storage_$dyn_storage_ptr",
+                    "typeString": "struct ITridentRouter.Path[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ExactInputParams",
+            "nameLocation": "390:16:22",
+            "scope": 6034,
+            "visibility": "public"
+          },
+          {
+            "id": 5991,
+            "nodeType": "StructDefinition",
+            "src": "526:93:22",
+            "canonicalName": "ITridentRouter.TokenInput",
+            "members": [
+              {
+                "constant": false,
+                "id": 5986,
+                "mutability": "mutable",
+                "name": "token",
+                "nameLocation": "562:5:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5991,
+                "src": "554:13:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 5985,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "554:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5988,
+                "mutability": "mutable",
+                "name": "native",
+                "nameLocation": "582:6:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5991,
+                "src": "577:11:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 5987,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "577:4:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5990,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "606:6:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 5991,
+                "src": "598:14:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5989,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "598:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "TokenInput",
+            "nameLocation": "533:10:22",
+            "scope": 6034,
+            "visibility": "public"
+          },
+          {
+            "id": 6002,
+            "nodeType": "StructDefinition",
+            "src": "625:138:22",
+            "canonicalName": "ITridentRouter.InitialPath",
+            "members": [
+              {
+                "constant": false,
+                "id": 5993,
+                "mutability": "mutable",
+                "name": "tokenIn",
+                "nameLocation": "662:7:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6002,
+                "src": "654:15:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 5992,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "654:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5995,
+                "mutability": "mutable",
+                "name": "pool",
+                "nameLocation": "687:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6002,
+                "src": "679:12:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 5994,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "679:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5997,
+                "mutability": "mutable",
+                "name": "native",
+                "nameLocation": "706:6:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6002,
+                "src": "701:11:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 5996,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "701:4:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5999,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "730:6:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6002,
+                "src": "722:14:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5998,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "722:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6001,
+                "mutability": "mutable",
+                "name": "data",
+                "nameLocation": "752:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6002,
+                "src": "746:10:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 6000,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "746:5:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "InitialPath",
+            "nameLocation": "632:11:22",
+            "scope": 6034,
+            "visibility": "public"
+          },
+          {
+            "id": 6011,
+            "nodeType": "StructDefinition",
+            "src": "769:172:22",
+            "canonicalName": "ITridentRouter.PercentagePath",
+            "members": [
+              {
+                "constant": false,
+                "id": 6004,
+                "mutability": "mutable",
+                "name": "tokenIn",
+                "nameLocation": "809:7:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6011,
+                "src": "801:15:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 6003,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "801:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6006,
+                "mutability": "mutable",
+                "name": "pool",
+                "nameLocation": "834:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6011,
+                "src": "826:12:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 6005,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "826:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6008,
+                "mutability": "mutable",
+                "name": "balancePercentage",
+                "nameLocation": "855:17:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6011,
+                "src": "848:24:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 6007,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "848:6:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6010,
+                "mutability": "mutable",
+                "name": "data",
+                "nameLocation": "930:4:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6011,
+                "src": "924:10:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 6009,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "924:5:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "PercentagePath",
+            "nameLocation": "776:14:22",
+            "scope": 6034,
+            "visibility": "public"
+          },
+          {
+            "id": 6020,
+            "nodeType": "StructDefinition",
+            "src": "947:117:22",
+            "canonicalName": "ITridentRouter.Output",
+            "members": [
+              {
+                "constant": false,
+                "id": 6013,
+                "mutability": "mutable",
+                "name": "token",
+                "nameLocation": "979:5:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6020,
+                "src": "971:13:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 6012,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "971:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6015,
+                "mutability": "mutable",
+                "name": "to",
+                "nameLocation": "1002:2:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6020,
+                "src": "994:10:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 6014,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "994:7:22",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6017,
+                "mutability": "mutable",
+                "name": "unwrapBento",
+                "nameLocation": "1019:11:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6020,
+                "src": "1014:16:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 6016,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1014:4:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6019,
+                "mutability": "mutable",
+                "name": "minAmount",
+                "nameLocation": "1048:9:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6020,
+                "src": "1040:17:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 6018,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1040:7:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Output",
+            "nameLocation": "954:6:22",
+            "scope": 6034,
+            "visibility": "public"
+          },
+          {
+            "id": 6033,
+            "nodeType": "StructDefinition",
+            "src": "1070:133:22",
+            "canonicalName": "ITridentRouter.ComplexPathParams",
+            "members": [
+              {
+                "constant": false,
+                "id": 6024,
+                "mutability": "mutable",
+                "name": "initialPath",
+                "nameLocation": "1119:11:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6033,
+                "src": "1105:25:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_InitialPath_$6002_storage_$dyn_storage_ptr",
+                  "typeString": "struct ITridentRouter.InitialPath[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 6022,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 6021,
+                      "name": "InitialPath",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 6002,
+                      "src": "1105:11:22"
+                    },
+                    "referencedDeclaration": 6002,
+                    "src": "1105:11:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_InitialPath_$6002_storage_ptr",
+                      "typeString": "struct ITridentRouter.InitialPath"
+                    }
+                  },
+                  "id": 6023,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1105:13:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_InitialPath_$6002_storage_$dyn_storage_ptr",
+                    "typeString": "struct ITridentRouter.InitialPath[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6028,
+                "mutability": "mutable",
+                "name": "percentagePath",
+                "nameLocation": "1157:14:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6033,
+                "src": "1140:31:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_PercentagePath_$6011_storage_$dyn_storage_ptr",
+                  "typeString": "struct ITridentRouter.PercentagePath[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 6026,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 6025,
+                      "name": "PercentagePath",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 6011,
+                      "src": "1140:14:22"
+                    },
+                    "referencedDeclaration": 6011,
+                    "src": "1140:14:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PercentagePath_$6011_storage_ptr",
+                      "typeString": "struct ITridentRouter.PercentagePath"
+                    }
+                  },
+                  "id": 6027,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1140:16:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_PercentagePath_$6011_storage_$dyn_storage_ptr",
+                    "typeString": "struct ITridentRouter.PercentagePath[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6032,
+                "mutability": "mutable",
+                "name": "output",
+                "nameLocation": "1190:6:22",
+                "nodeType": "VariableDeclaration",
+                "scope": 6033,
+                "src": "1181:15:22",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Output_$6020_storage_$dyn_storage_ptr",
+                  "typeString": "struct ITridentRouter.Output[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 6030,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 6029,
+                      "name": "Output",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 6020,
+                      "src": "1181:6:22"
+                    },
+                    "referencedDeclaration": 6020,
+                    "src": "1181:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Output_$6020_storage_ptr",
+                      "typeString": "struct ITridentRouter.Output"
+                    }
+                  },
+                  "id": 6031,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1181:8:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Output_$6020_storage_$dyn_storage_ptr",
+                    "typeString": "struct ITridentRouter.Output[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ComplexPathParams",
+            "nameLocation": "1077:17:22",
+            "scope": 6034,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITridentRouter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5957,
+          "nodeType": "StructuredDocumentation",
+          "src": "72:43:22",
+          "text": "@notice Trident pool router interface."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          6034
+        ],
+        "name": "ITridentRouter",
+        "nameLocation": "125:14:22",
+        "scope": 6035,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 22
+}

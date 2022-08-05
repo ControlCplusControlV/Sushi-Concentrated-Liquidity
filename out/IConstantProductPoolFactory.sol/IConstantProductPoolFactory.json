@@ -1,0 +1,185 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getDeployData",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "contract IMasterDeployer",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getDeployData()": "d039f622"
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IConstantProductPoolFactory.sol",
+    "id": 5661,
+    "exportedSymbols": {
+      "IConstantProductPoolFactory": [
+        5660
+      ],
+      "IMasterDeployer": [
+        5800
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:185:13",
+    "nodes": [
+      {
+        "id": 5650,
+        "nodeType": "PragmaDirective",
+        "src": "46:24:13",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 5651,
+        "nodeType": "ImportDirective",
+        "src": "72:31:13",
+        "absolutePath": "src/interfaces/IMasterDeployer.sol",
+        "file": "./IMasterDeployer.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 5661,
+        "sourceUnit": 5801,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 5660,
+        "nodeType": "ContractDefinition",
+        "src": "105:125:13",
+        "nodes": [
+          {
+            "id": 5659,
+            "nodeType": "FunctionDefinition",
+            "src": "149:79:13",
+            "functionSelector": "d039f622",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getDeployData",
+            "nameLocation": "158:13:13",
+            "parameters": {
+              "id": 5652,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "171:2:13"
+            },
+            "returnParameters": {
+              "id": 5658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5654,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5659,
+                  "src": "197:12:13",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 5653,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:5:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5657,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5659,
+                  "src": "211:15:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IMasterDeployer_$5800",
+                    "typeString": "contract IMasterDeployer"
+                  },
+                  "typeName": {
+                    "id": 5656,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 5655,
+                      "name": "IMasterDeployer",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 5800,
+                      "src": "211:15:13"
+                    },
+                    "referencedDeclaration": 5800,
+                    "src": "211:15:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IMasterDeployer_$5800",
+                      "typeString": "contract IMasterDeployer"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "196:31:13"
+            },
+            "scope": 5660,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IConstantProductPoolFactory",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5660
+        ],
+        "name": "IConstantProductPoolFactory",
+        "nameLocation": "115:27:13",
+        "scope": 5661,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 13
+}

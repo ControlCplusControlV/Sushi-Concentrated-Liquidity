@@ -1,0 +1,1568 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "src/ConcentratedLiquidityPool.sol": {
+      "lastModificationDate": 1659669947841,
+      "contentHash": "e6a4ecd3dad158e45b90382f992b9c07",
+      "sourceName": "src/ConcentratedLiquidityPool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IBentoBoxMinimal.sol",
+        "src/interfaces/IConcentratedLiquidityPool.sol",
+        "src/interfaces/IERC20.sol",
+        "src/interfaces/IMasterDeployer.sol",
+        "src/interfaces/IPositionManager.sol",
+        "src/interfaces/ITridentCallee.sol",
+        "src/interfaces/ITridentRouter.sol",
+        "src/libraries/DyDxMath.sol",
+        "src/libraries/FullMath.sol",
+        "src/libraries/RebaseLibrary.sol",
+        "src/libraries/SafeCast.sol",
+        "src/libraries/SwapLib.sol",
+        "src/libraries/TickMath.sol",
+        "src/libraries/Ticks.sol",
+        "src/libraries/UnsafeMath.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ConcentratedLiquidityPool": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "ConcentratedLiquidityPool.sol/ConcentratedLiquidityPool.json"
+        }
+      }
+    },
+    "src/ConcentratedLiquidityPoolFactory.sol": {
+      "lastModificationDate": 1659668247574,
+      "contentHash": "7543843548884fb0d091dbdbe5b5cca1",
+      "sourceName": "src/ConcentratedLiquidityPoolFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/ConcentratedLiquidityPool.sol",
+        "src/abstract/PoolDeployer.sol",
+        "src/interfaces/IBentoBoxMinimal.sol",
+        "src/interfaces/IConcentratedLiquidityPool.sol",
+        "src/interfaces/IERC20.sol",
+        "src/interfaces/IMasterDeployer.sol",
+        "src/interfaces/IPositionManager.sol",
+        "src/interfaces/ITridentCallee.sol",
+        "src/interfaces/ITridentRouter.sol",
+        "src/libraries/DyDxMath.sol",
+        "src/libraries/FullMath.sol",
+        "src/libraries/RebaseLibrary.sol",
+        "src/libraries/SafeCast.sol",
+        "src/libraries/SwapLib.sol",
+        "src/libraries/TickMath.sol",
+        "src/libraries/Ticks.sol",
+        "src/libraries/UnsafeMath.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ConcentratedLiquidityPoolFactory": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "ConcentratedLiquidityPoolFactory.sol/ConcentratedLiquidityPoolFactory.json"
+        }
+      }
+    },
+    "src/MasterDeployer.sol": {
+      "lastModificationDate": 1659668002747,
+      "contentHash": "ec28437ab9ea69e049eb8a8370d9ee3f",
+      "sourceName": "src/MasterDeployer.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IPoolFactory.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "MasterDeployer": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "MasterDeployer.sol/MasterDeployer.json"
+        }
+      }
+    },
+    "src/abstract/Multicall.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "0593343eaa665fadf6cd1363a8bb79ca",
+      "sourceName": "src/abstract/Multicall.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Multicall": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "Multicall.sol/Multicall.json"
+        }
+      }
+    },
+    "src/abstract/PoolDeployer.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "ca95e3da0ac64ee2aea756f24a9a9618",
+      "sourceName": "src/abstract/PoolDeployer.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "PoolDeployer": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "PoolDeployer.sol/PoolDeployer.json"
+        }
+      }
+    },
+    "src/abstract/SolmateERC721.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "66292c9a7a5e6c3d27847e02abfa4f04",
+      "sourceName": "src/abstract/SolmateERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC721": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "SolmateERC721.sol/ERC721.json"
+        },
+        "ERC721TokenReceiver": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "SolmateERC721.sol/ERC721TokenReceiver.json"
+        }
+      }
+    },
+    "src/abstract/TridentERC721.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "4b60208bf6c1d782558c491c86cf358d",
+      "sourceName": "src/abstract/TridentERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/abstract/SolmateERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "TridentERC721": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "TridentERC721.sol/TridentERC721.json"
+        }
+      }
+    },
+    "src/interfaces/IBentoBoxMinimal.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "d29a16e823c4b4740ae777b2a3512a68",
+      "sourceName": "src/interfaces/IBentoBoxMinimal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/libraries/RebaseLibrary.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IBentoBoxMinimal": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IBentoBoxMinimal.sol/IBentoBoxMinimal.json"
+        }
+      }
+    },
+    "src/interfaces/IConcentratedLiquidityPool.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "ab6786e7359c8dfbbf8bdf69f9d43301",
+      "sourceName": "src/interfaces/IConcentratedLiquidityPool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IBentoBoxMinimal.sol",
+        "src/interfaces/IConcentratedLiquidityPool.sol",
+        "src/interfaces/IMasterDeployer.sol",
+        "src/libraries/RebaseLibrary.sol",
+        "src/libraries/TickMath.sol",
+        "src/libraries/Ticks.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IConcentratedLiquidityPool": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IConcentratedLiquidityPool.sol/IConcentratedLiquidityPool.json"
+        },
+        "IConcentratedLiquidityPoolStruct": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IConcentratedLiquidityPool.sol/IConcentratedLiquidityPoolStruct.json"
+        }
+      }
+    },
+    "src/interfaces/IConcentratedLiquidityPoolManager.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "d49ff78bf611f08e76680b4849244cad",
+      "sourceName": "src/interfaces/IConcentratedLiquidityPoolManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IBentoBoxMinimal.sol",
+        "src/interfaces/IConcentratedLiquidityPool.sol",
+        "src/interfaces/IMasterDeployer.sol",
+        "src/interfaces/ITridentNFT.sol",
+        "src/libraries/RebaseLibrary.sol",
+        "src/libraries/TickMath.sol",
+        "src/libraries/Ticks.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IConcentratedLiquidityPoolManager": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IConcentratedLiquidityPoolManager.sol/IConcentratedLiquidityPoolManager.json"
+        },
+        "IConcentratedLiquidityPoolManagerStruct": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IConcentratedLiquidityPoolManager.sol/IConcentratedLiquidityPoolManagerStruct.json"
+        }
+      }
+    },
+    "src/interfaces/IConstantProductPool.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "e5ad14ec6088c78543726fa09b9796a5",
+      "sourceName": "src/interfaces/IConstantProductPool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IERC20.sol",
+        "src/interfaces/IPool.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IConstantProductPool": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IConstantProductPool.sol/IConstantProductPool.json"
+        }
+      }
+    },
+    "src/interfaces/IConstantProductPoolFactory.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "ea547a76890655a4ebec3dafe5e4c318",
+      "sourceName": "src/interfaces/IConstantProductPoolFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IMasterDeployer.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IConstantProductPoolFactory": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IConstantProductPoolFactory.sol/IConstantProductPoolFactory.json"
+        }
+      }
+    },
+    "src/interfaces/IERC20.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "92c0194d54d344a129768a28c70cdd7c",
+      "sourceName": "src/interfaces/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "src/interfaces/IERC20PermitAllowed.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "1a425b17be2c54d203e65d74e5791eb3",
+      "sourceName": "src/interfaces/IERC20PermitAllowed.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IERC20PermitAllowed": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IERC20PermitAllowed.sol/IERC20PermitAllowed.json"
+        }
+      }
+    },
+    "src/interfaces/IMasterDeployer.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "211cffac0bfc0d6b81626714b1a7cff0",
+      "sourceName": "src/interfaces/IMasterDeployer.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IMasterDeployer": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IMasterDeployer.sol/IMasterDeployer.json"
+        }
+      }
+    },
+    "src/interfaces/IPool.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "141978b909b823243ad25d03aafdbefb",
+      "sourceName": "src/interfaces/IPool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IPool": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IPool.sol/IPool.json"
+        }
+      }
+    },
+    "src/interfaces/IPoolFactory.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "9c9d1f1c93f7f2970a95b28f5441179d",
+      "sourceName": "src/interfaces/IPoolFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IPoolFactory": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IPoolFactory.sol/IPoolFactory.json"
+        }
+      }
+    },
+    "src/interfaces/IPositionManager.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "5d6199b45a886ac08a3412267e5ae7db",
+      "sourceName": "src/interfaces/IPositionManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IPositionManager": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IPositionManager.sol/IPositionManager.json"
+        }
+      }
+    },
+    "src/interfaces/ITridentCallee.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "46b3c189399525de95b3a55673b83c21",
+      "sourceName": "src/interfaces/ITridentCallee.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ITridentCallee": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "ITridentCallee.sol/ITridentCallee.json"
+        }
+      }
+    },
+    "src/interfaces/ITridentNFT.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "003412b2a245eb7e1a2f2c880e181479",
+      "sourceName": "src/interfaces/ITridentNFT.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ITridentNFT": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "ITridentNFT.sol/ITridentNFT.json"
+        }
+      }
+    },
+    "src/interfaces/ITridentRouter.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "121dd3712b080edb90e8e6d8042fd076",
+      "sourceName": "src/interfaces/ITridentRouter.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ITridentRouter": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "ITridentRouter.sol/ITridentRouter.json"
+        }
+      }
+    },
+    "src/interfaces/IUniswapV2Minimal.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "b42fe1ae6b760aed820f90c9a252f15a",
+      "sourceName": "src/interfaces/IUniswapV2Minimal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IUniswapV2Minimal": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IUniswapV2Minimal.sol/IUniswapV2Minimal.json"
+        }
+      }
+    },
+    "src/interfaces/IWETH9.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "fe4c7e00cebbafe26b1514d9bdc9b796",
+      "sourceName": "src/interfaces/IWETH9.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IWETH9": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IWETH9.sol/IWETH9.json"
+        }
+      }
+    },
+    "src/interfaces/IWhiteListManager.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "7f157f67962c3190b89611060b17090a",
+      "sourceName": "src/interfaces/IWhiteListManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IWhiteListManager": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IWhiteListManager.sol/IWhiteListManager.json"
+        }
+      }
+    },
+    "src/libraries/DyDxMath.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "da08a007f6c10342c7ff1538cdab986e",
+      "sourceName": "src/libraries/DyDxMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/libraries/FullMath.sol",
+        "src/libraries/SafeCast.sol",
+        "src/libraries/UnsafeMath.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "DyDxMath": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "DyDxMath.sol/DyDxMath.json"
+        }
+      }
+    },
+    "src/libraries/FullMath.sol": {
+      "lastModificationDate": 1659665163069,
+      "contentHash": "e41d3b22e2eac7b84583e855cd3dbf40",
+      "sourceName": "src/libraries/FullMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "FullMath": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "FullMath.sol/FullMath.json"
+        }
+      }
+    },
+    "src/libraries/MathUtils.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "92207534d5d187d0399f576d4a2a6674",
+      "sourceName": "src/libraries/MathUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "MathUtils": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "MathUtils.sol/MathUtils.json"
+        }
+      }
+    },
+    "src/libraries/RebaseLibrary.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "07b0ca5236f55406a9f27991c2b23c9a",
+      "sourceName": "src/libraries/RebaseLibrary.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8",
+      "artifacts": {
+        "RebaseLibrary": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "RebaseLibrary.sol/RebaseLibrary.json"
+        }
+      }
+    },
+    "src/libraries/SafeCast.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "48e0913250935222bdea7cafc7e607f2",
+      "sourceName": "src/libraries/SafeCast.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SafeCast": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "SafeCast.sol/SafeCast.json"
+        }
+      }
+    },
+    "src/libraries/SwapLib.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "d8c9bbbf6d6397a14162b50e6f331865",
+      "sourceName": "src/libraries/SwapLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/libraries/FullMath.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SwapLib": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "SwapLib.sol/SwapLib.json"
+        }
+      }
+    },
+    "src/libraries/TickMath.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "05e27b61a4e9a921ba68265dc31d3ea9",
+      "sourceName": "src/libraries/TickMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "TickMath": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "TickMath.sol/TickMath.json"
+        }
+      }
+    },
+    "src/libraries/Ticks.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "99ea1abcbba7028cf631730b68ca9b25",
+      "sourceName": "src/libraries/Ticks.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IBentoBoxMinimal.sol",
+        "src/interfaces/IConcentratedLiquidityPool.sol",
+        "src/interfaces/IMasterDeployer.sol",
+        "src/libraries/RebaseLibrary.sol",
+        "src/libraries/TickMath.sol",
+        "src/libraries/Ticks.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Ticks": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "Ticks.sol/Ticks.json"
+        }
+      }
+    },
+    "src/libraries/Transfer.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "0a06e242e082b9a73712cb12f003ce37",
+      "sourceName": "src/libraries/Transfer.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Transfer": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "Transfer.sol/Transfer.json"
+        }
+      }
+    },
+    "src/libraries/TridentMath.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "70a91d9b951778375deed429a5e5f0ba",
+      "sourceName": "src/libraries/TridentMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "TridentMath": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "TridentMath.sol/TridentMath.json"
+        }
+      }
+    },
+    "src/libraries/UnsafeMath.sol": {
+      "lastModificationDate": 1659665163073,
+      "contentHash": "e0a5f333a66543d3fa7cf64b05331da8",
+      "sourceName": "src/libraries/UnsafeMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "UnsafeMath": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "UnsafeMath.sol/UnsafeMath.json"
+        }
+      }
+    },
+    "test/SwappingTests.t.sol": {
+      "lastModificationDate": 1659671819816,
+      "contentHash": "45e46f82046476da9bd545823285b866",
+      "sourceName": "test/SwappingTests.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/ConcentratedLiquidityPool.sol",
+        "src/ConcentratedLiquidityPoolFactory.sol",
+        "src/MasterDeployer.sol",
+        "src/abstract/PoolDeployer.sol",
+        "src/interfaces/IBentoBoxMinimal.sol",
+        "src/interfaces/IConcentratedLiquidityPool.sol",
+        "src/interfaces/IERC20.sol",
+        "src/interfaces/IMasterDeployer.sol",
+        "src/interfaces/IPoolFactory.sol",
+        "src/interfaces/IPositionManager.sol",
+        "src/interfaces/ITridentCallee.sol",
+        "src/interfaces/ITridentRouter.sol",
+        "src/libraries/DyDxMath.sol",
+        "src/libraries/FullMath.sol",
+        "src/libraries/RebaseLibrary.sol",
+        "src/libraries/SafeCast.sol",
+        "src/libraries/SwapLib.sol",
+        "src/libraries/TickMath.sol",
+        "src/libraries/Ticks.sol",
+        "src/libraries/UnsafeMath.sol",
+        "test/util/ERC20.sol"
+      ],
+      "versionRequirement": "^0.8.14",
+      "artifacts": {
+        "SwappingTests": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "SwappingTests.t.sol/SwappingTests.json"
+        }
+      }
+    },
+    "test/util/ERC20.sol": {
+      "lastModificationDate": 1659666695929,
+      "contentHash": "61315e3724fb5986bfb3e949c26905a3",
+      "sourceName": "test/util/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "ERC20.sol/ERC20.json"
+        }
+      }
+    }
+  }
+}
