@@ -15,6 +15,36 @@ import "./libraries/DyDxMath.sol";
 import "./libraries/SwapLib.sol";
 import "./libraries/Ticks.sol";
 
+/* Sushi V8 Concentrated Liquidity Pool
+         
+           Keeps the Sushi Rolling in
+    
+                  ████████████████          
+            ██████                ██████    
+          ██      ▒▒▒▒▒▒▒▒▒▒▒▒    ░░    ██  
+        ██      ▓▓▓▓▒▒▒▒▒▒▒▒        ░░    ██
+        ████      ▓▓▓▓▓▓▓▓▓▓▓▓    ░░    ████
+        ██▒▒██████                ██████▒▒██
+        ██▒▒░░░░░░████████████████░░░░▒▒▒▒██
+        ██▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒██
+        ██▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒██
+        ██▒▒░░██░░░░░░░░░░░░░░░░██░░░░▒▒▒▒██
+        ██▒▒██  ██░░░░░░░░░░░░██  ██░░▒▒▒▒██
+        ██▒▒░░██░░░░░░░░░░░░░░░░██░░░░▒▒▒▒██
+        ██▒▒▒▒░░░░██░░░░░░░░██░░░░▒▒▒▒▒▒▒▒██
+        ██▒▒░░░░░░░░████████░░░░░░░░░░▒▒▒▒██
+          ██░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒██  
+            ██████░░░░░░░░░░░░░░░░██████    
+                  ████████████████          
+
+*/
+
+
+
+
+
+
+
 /// @notice Trident Concentrated liquidity pool implementation.
 /// @dev Amounts are considered to be in Bentobox shared
 contract ConcentratedLiquidityPool is IConcentratedLiquidityPoolStruct {
