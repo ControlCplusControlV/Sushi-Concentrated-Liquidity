@@ -2,7 +2,6 @@
 
 pragma solidity >=0.8.0;
 
-import "./IBentoBoxMinimal.sol";
 import "./IMasterDeployer.sol";
 import "../libraries/Ticks.sol";
 
@@ -88,7 +87,6 @@ interface IConcentratedLiquidityPool is IConcentratedLiquidityPoolStruct {
             uint24 _tickSpacing,
             uint24 _swapFee,
             address _barFeeTo,
-            IBentoBoxMinimal _bento,
             IMasterDeployer _masterDeployer,
             address _token0,
             address _token1

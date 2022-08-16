@@ -21,6 +21,4 @@ interface IConcentratedLiquidityPoolManagerStruct {
 /// @notice Trident concentrated liquidity manager contract interface.
 interface IConcentratedLiquidityPoolManager is IConcentratedLiquidityPoolManagerStruct, ITridentNFT {
     function positions(uint256) external view returns (Position memory);
-
-    function bento() external view returns (IBentoBoxMinimal);
 }
