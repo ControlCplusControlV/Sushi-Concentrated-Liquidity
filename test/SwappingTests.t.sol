@@ -4,8 +4,9 @@ import "./util/ERC20.sol";
 import {MasterDeployer} from "../src/MasterDeployer.sol";
 import "../src/ConcentratedLiquidityPool.sol";
 import "../src/ConcentratedLiquidityPoolFactory.sol";
+import "../src/interfaces/IPositionManager.sol";
 
-contract SwappingTests {
+contract SwappingTests is IPositionManager {
 
     MasterDeployer master_deployer;
     ConcentratedLiquidityPoolFactory pool_deployer;
@@ -27,16 +28,26 @@ contract SwappingTests {
 
         test_pool = ConcentratedLiquidityPool(pool_deployer.deployPool(deploy_data));
     }
+    function mintCallback(
+        address token0,
+        address token1,
+        uint256 amount0,
+        uint256 amount1,
+        bool native
+    ) external {
+        ERC20(token0).transfer(msg.sender, amount0);
+        ERC20(token1).transfer(msg.sender, amount1);
+    }
 
     function test_addLiquidity() public {
         tokenA.mint(address(this), 1000 ether);
         tokenB.mint(address(this), 1 ether);
 
         IConcentratedLiquidityPoolStruct.MintParams memory params = IConcentratedLiquidityPoolStruct.MintParams({
-            lowerOld: -30,
+            lowerOld: TickMath.MIN_TICK,
             lower: -30,
-            upperOld: 105, 
-            upper: 105, 
+            upperOld: -30,
+            upper: 105,
             amount0Desired: 1000 ether,
             amount1Desired: 1 ether,
             native: false
