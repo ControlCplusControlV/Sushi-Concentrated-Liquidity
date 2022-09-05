@@ -11,24 +11,9 @@ import "../src/libraries/Ticks.sol";
 import "../src/libraries/TickMath.sol";
 import "../src/libraries/TridentMath.sol";
 
-
-interface VM {
-    function assume(bool) external;
-}
+import "./FuzzySushiHelpers.sol";
 
 contract SwappingTests is IPositionManager, FuzzySushiHelpers {
-
-    address constant private VM_ADDRESS =
-        address(bytes20(uint160(uint256(keccak256('hevm cheat code')))));
-
-    VM vm = VM(VM_ADDRESS);
-
-    MasterDeployer master_deployer;
-    ConcentratedLiquidityPoolFactory pool_deployer;
-
-    ERC20 tokenA;
-    ERC20 tokenB;
-
     function setUp() public {
         master_deployer = new MasterDeployer(100, address(this));
         pool_deployer = new ConcentratedLiquidityPoolFactory(address(master_deployer));
@@ -37,22 +22,6 @@ contract SwappingTests is IPositionManager, FuzzySushiHelpers {
         tokenB = new ERC20("TokenB", "B", 18);
     }
 
-    function getPool(uint24 swapFee, uint160 price, uint24 tickSpacing) internal returns (ConcentratedLiquidityPool pool){
-        bytes memory deploy_data = abi.encode(address(tokenA), address(tokenB), swapFee, price, tickSpacing);
-
-        pool = ConcentratedLiquidityPool(pool_deployer.deployPool(deploy_data));
-    }
-
-    function mintCallback(
-        address token0,
-        address token1,
-        uint256 amount0,
-        uint256 amount1,
-        bool native
-    ) external {
-        ERC20(token0).transfer(msg.sender, amount0);
-        ERC20(token1).transfer(msg.sender, amount1);
-    }
 
     function test_addLiquidity(uint24 swapFee, uint128 reserve0, uint128 reserve1) public {
         vm.assume(reserve0 > 1000);
@@ -102,5 +71,24 @@ contract SwappingTests is IPositionManager, FuzzySushiHelpers {
 
         uint256 out = pool.mint(params);
         require(out > 0);
+    }
+    
+    function test_swap(RandomizedLiquidityPool calldata pool_data, bool aForB, uint128 amount) public {
+        vm.assume(amount > 1 ether);
+        ConcentratedLiquidityPool pool = getRandomizedPoolWithLiquidity(pool_data);
+
+        if (aForB) {
+            tokenB.mint(address(this), amount);
+            tokenB.transfer(address(pool), amount);
+        } else {
+            tokenA.mint(address(this), amount);
+            tokenA.transfer(address(pool), amount);
+        }
+
+        bytes memory data = abi.encode(true, amount);
+
+        uint256 amountOut = pool.swap(data);
+
+        require(amountOut > 0);
     }
 }

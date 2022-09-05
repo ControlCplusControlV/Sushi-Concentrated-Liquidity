@@ -15,7 +15,7 @@ interface VM {
     function assume(bool) external;
 }
 
-contract FuzzySushiHelpers {
+contract FuzzySushiHelpers is IPositionManager {
     ERC20 tokenA;
     ERC20 tokenB;
 
@@ -31,6 +31,17 @@ contract FuzzySushiHelpers {
         bytes memory deploy_data = abi.encode(address(tokenA), address(tokenB), swapFee, price, tickSpacing);
 
         pool = ConcentratedLiquidityPool(pool_deployer.deployPool(deploy_data));
+    }
+
+    function mintCallback(
+        address token0,
+        address token1,
+        uint256 amount0,
+        uint256 amount1,
+        bool native
+    ) external {
+        ERC20(token0).transfer(msg.sender, amount0);
+        ERC20(token1).transfer(msg.sender, amount1);
     }
 
     struct RandomizedLiquidityPool {
